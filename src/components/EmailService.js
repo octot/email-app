@@ -9,10 +9,8 @@ const EmailForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/send-email', {
-                description,
-                email,
-            });
+            const response = await axios.post('http://localhost:5000/send-email', { description, email });
+            console.log("response ", response)
             alert('Email sent successfully!');
         } catch (error) {
             alert('Error sending email');
