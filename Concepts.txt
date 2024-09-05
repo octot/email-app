@@ -1,0 +1,13 @@
+SMTP (Simple Mail Transfer Protocol)
+ Is a protocol used for sending emails across the Internet. It is a part of the application layer of the [TCP/IP](https://en.wikipedia.org/wiki/Internet_protocol_suite) protocol suite and is used to transfer electronic mail from one server to another. Here’s a breakdown of the key concepts and how SMTP is used in the provided MERN application:
+
+### Key Concepts of SMTP
+
+1. **SMTP Server**: This is the server that handles the sending of emails. It receives outgoing mail from clients and forwards it to the recipient's email server.
+
+2. **SMTP Client**: This is the client that sends the email to the SMTP server. In the context of the provided code, the [`nodemailer`](https://nodemailer.com/) library acts as the SMTP client.
+
+3. **Mail Transfer Agent (MTA)**: This is the software that transfers emails from one server to another using SMTP.
+
+4. **Mail User Agent (MUA)**: This is the software that allows users to send and receive emails. In the provided code, the React frontend acts as the MUA.
+
